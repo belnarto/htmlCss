@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Images</title>
+</head>
+<body>
+<ul>
+    <li>JPG image format is great for photos and images with lots of gradients in them. On the other hand, JPGs don’t
+        allow for transparent pixels. <img src='images/mochi.jpg' alt="jpg"/>
+    </li>
+    <li>GIFs are good for animations. <img src='images/mochi.gif' alt="gif"/></li>
+    <li>PNGs are great for anything that’s not a photo or animated, like diagrams, icons, etc. <img
+            src='images/mochi.png' alt="png"/></li>
+    <li>SVGs are vector based. Use them wherever you can. <img src='images/mochi.svg' alt="svg"/></li>
+</ul>
+
+<p>By default, the img element uses the inherit dimensions of its image file.</p>
+<p>For example 150*150 for this image is inherited:</p>
+<img src="images/mochi.png" alt="150*150"/>
+<p>We can scale it dimension proportionally by setting only one dimension, for example width=75:</p>
+<img src="images/mochi.png" width="75" alt="width 75"/>
+<p>If we set two dimensions image could be scratched, for example width=75, height=50:</p>
+<img src="images/mochi.png" width="75" height="50" alt="width 75, height=50"/>
+<p>The width and height attributes can be useful, but it’s usually better to set image dimensions with CSS so you can
+    alter them with media queries.</p>
+
+<p>It's better for any img element to have text alternative attribute. It would help search engines and people which
+    uses browser without images (blind people).</p>
+<img src="images/mochi.png" alt="this is text alternative"/>
+</body>
+</html>

@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    width: 600px;
+    margin: 0 auto;
+}
+
+span { background-color: white; }
+.direct > span {
+    background-color: blue;
+}
+
+.all span {
+    background-color: green;
+}
+
+p:first-of-type {
+    color: red;
+}
+
+p:last-of-type {
+    margin-bottom: 50px;
+}
+
+.synopsis {
+    color: #7E8184;        /* Light gray */
+    font-style: italic;
+}
+
+.synopsis em {
+    font-style: normal;
+}
+
+.beforeButtonStyle {
+    font-style: italic;
+    background-color: #EEB75A;    /* Yellow */
+}
+
+.button:link,                 /* Change this */
+.button:visited {             /* Change this */
+    display: block;             /* Add this */
+    text-decoration: none;      /* Add this */
+
+    color: #FFF;                /* The rest is the same */
+    background-color: #5995DA;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #5D6063;
+    border-radius: 5px;
+
+    width: 200px;
+    margin: 20px auto;
+}
+
+.button:hover,
+.button:visited:hover {
+    color: #FFF;
+    background-color: #76AEED;  /* Light blue */
+}
+
+.button:active,
+.button:visited:active {
+    color: #FFF;
+    background-color: #5995DA;  /* Blue */
+}
+
+.afterButtonStyle {
+    font-style: italic;
+    background-color: #EEB75A;    /* Yellow */
+}
+
+
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+a:visited {
+    color: purple;
+}
+a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+a:active {
+    color: red;
+}
+
+#button3 {
+    display: block;             /* Add this */
+    text-decoration: none;      /* Add this */
+
+    color: grey;                /* The rest is the same */
+    background-color: yellow;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #5D6063;
+    border-radius: 5px;
+
+    width: 200px;
+    margin: 20px auto;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'/>
+    <title>CSS Selectors</title>
+    <link rel='stylesheet' href='css/selectors.css'/>
+</head>
+<body>
+<div class='page'>
+    <h1>CSS Selectors</h1>
+
+    <p class='synopsis'>CSS selectors let you <em>select</em> individual HTML elements in an HTML
+        document. This is <strong>super</strong> useful.</p>
+
+    <p>Classes are ridiculously important, since they allow you to select
+        arbitrary boxes in your web pages.</p>
+
+    <p>We’ll also be talking about links in this example, so here’s
+        <a href='https://internetingishard.com'>Interneting Is Hard</a> for us to
+        style.</p>
+
+    <a href="#" class='button'>Button One</a>
+    <a href="#" class='button beforeButtonStyle'>Button Two - order in CSS matters</a>
+    <a href="#" class='beforeButtonStyle button'>Button Two - order in CSS matters</a>
+    <a href="#" class='button afterButtonStyle'>Button Two - order in CSS matters</a>
+    <a href="#" class='afterButtonStyle button'>Button Two - order in CSS matters</a>
+    <a id="button3" href="#">Button 3 css by id</a>
+</div>
+<hr/>
+<p>Пример, когда только прямой потомок</p>
+<div class="direct">
+  <span>Span 1 в div
+    <span>Span 2 в span, который в div</span>
+  </span>
+</div>
+<span>Span 3. Не в div вообще</span>
+<hr/>
+<hr/>
+<p>Пример, когда любой потомок</p>
+<div class="all">
+  <span>Span 1 в div
+    <span>Span 2 в span, который в div</span>
+  </span>
+</div>
+<span>Span 3. Не в div вообще</span>
+
+<hr/>
+<p>Not all selectors are equal. Asc</p>
+<ul>
+    <li>by id</li>
+    <li>by pseudo-class or child</li>
+    <li>by class</li>
+    <li>by type</li>
+</ul>
+</body>
+</html>

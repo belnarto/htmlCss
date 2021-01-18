@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box model</title>
+    <link rel="stylesheet" href="css/boxModel.css">
+</head>
+<body>
+<p><em>Default Box</em> behavior</p>
+<p><em style="display: block">Box</em> behavior could be changed</p>
+
+<h3>4 in 1 padding example</h3>
+
+<h1>border example</h1>
+
+<hr/>
+
+<h2 style="padding: 30px; margin: 0; background-color: red; border: 1px solid #5D6063;">padding has background</h2>
+<h2 style="margin: 30px; padding: 0; background-color: red; border: 1px solid #5D6063;">margin has no background</h2>
+
+<hr/>
+
+<a href="#" style="padding: 30px; margin: 0; display: block; border: 1px solid #5D6063;">padding is included in click
+    area</a>
+<a href="#" style="margin: 30px; padding: 0; display: block; border: 1px solid #5D6063;">margin isn't included in click
+    area</a>
+
+<hr/>
+
+<h2 style="padding: 30px; margin: 0; background-color: red; border: 1px solid #5D6063;">paddings aren't collapsed
+    vertically</h2>
+<h2 style="padding: 30px; margin: 0; background-color: green; border: 1px solid #5D6063;">paddings aren't collapsed
+    vertically</h2>
+
+<h2 style="margin: 30px; padding: 0; background-color: red; border: 1px solid #5D6063;">margins are collapsed
+    vertically</h2>
+<h2 style="margin: 30px; padding: 0; background-color: green; border: 1px solid #5D6063;">margins are collapsed
+    vertically</h2>
+
+<h2 style="margin: 30px; padding: 0; background-color: red; border: 1px solid #5D6063;">prevented collapsing</h2>
+<div style='padding-top: 1px'></div>
+<h2 style="margin: 30px; padding: 0; background-color: green; border: 1px solid #5D6063;">prevented collapsing</h2>
+
+<hr/>
+
+<p>just text just textjust textjust textjust textjust textjust textjust textjust textjust textjust textjust textjust
+    textjust textjust textjust textjust textjust textjust textjust text Inline elements ignore <strong
+            style="margin: 10px; background-color: red;">top</strong> and <strong
+            style="padding: 10px; background-color: red;">bottom</strong> margins just textjust textjust textjust
+    textjust textjust textjust textjust textjust textjust textjust textjust textjust textjust textjust textjust textjust
+    textjust textjust textjust textjust textjust textjust textjust textjust textjust text</p>
+
+<hr/>
+
+<div>div element</div>
+
+<hr/>
+
+<p>just text just textjust textjust <span>span element</span> textjust textjust textjust<p/>
+
+<hr/>
+
+<p>box sizing</p>
+<p style="width: 200px; padding: 20px; border: 2px solid #fff;">default 200px, actually 244</p>
+<p style="box-sizing: border-box; width: 200px; padding: 20px; border: 2px solid #fff;">200px, content auto</p>
+
+<hr/>
+
+<p>Aligning boxes</p>
+<p class="autoMargings">1) centering with auto-margins</p>
+</body>
+</html>

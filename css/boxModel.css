@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    padding: 20px 10px;  /* Vertical  Horizontal */
+}
+
+h3 {
+    padding: 20px 0 20px 30px;  /* Top  Right  Bottom  Left */
+}
+
+h1 {
+    padding: 50px;
+    border: 1px solid #5D6063;
+}
+
+div, span {
+    color: #FFF;
+    background-color: #5995DA;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #5D6063;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.autoMargings {
+    color: #FFF;
+    background-color: #4A90E2;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+
+    width: 200px;
+    box-sizing: border-box;
+    margin: 20px auto; /* Vertical  Horizontal */
+}
