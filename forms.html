@@ -27,13 +27,13 @@
         <input id='talk-type-1'
                name='talk-type'
                type='radio'
-               value='main-stage' />
+               value='main-stage'/>
         <label for='talk-type-1' class='radio-label'>Main Stage</label>
         <input id='talk-type-2'
                name='talk-type'
                type='radio'
                value='workshop'
-               checked />
+               checked/>
         <label for='talk-type-2' class='radio-label'>Workshop</label>
     </fieldset>
     <div class='form-row'>
@@ -60,8 +60,39 @@
         </label>
     </div>
     <div class='form-row'>
-        <button>Submit</button>
+        <button>Submit with refresh</button>
     </div>
 </form>
+<form class='speaker-form' onsubmit="return ajaxpost()">
+    <div class='form-row'>
+        <label for='user-name'>Name</label>
+        <input type="text" id="user-name" required/>
+    </div>
+    <div class='form-row'>
+        <label for='user-email'>Email</label>
+        <input type="email" id="user-email" required/>
+    </div>
+    <div class='form-row'>
+        <button>Submit without refresh</button>
+    </div>
+</form>
+<script>
+    function ajaxpost(){
+        // (A) GET FORM DATA
+        let data = new FormData();
+        data.append("name", document.getElementById("user-name").value);
+        data.append("email", document.getElementById("user-email").value);
+
+        // (B) AJAX
+        let xhr = new XMLHttpRequest();
+        xhr.open("POST", "#");
+        // What to do when server responds
+        xhr.onload = function(){ console.log(this.response); };
+        xhr.send(data);
+
+        // (C) PREVENT HTML FORM SUBMIT
+        return false;
+    }
+</script>
 </body>
 </html>
